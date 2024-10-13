@@ -2,4 +2,4 @@
 
 // Solution
 const contamination = (text, char) => text.replace(/./g, char)
-console.log(contamination('abcsdfdfdsfdsfdsf', 'z')) // Output: zzz
+console.log(contamination('abcsdfdfdsfdsfdsf', 'z')) // Output: zzzzzzzzzzzzzzzzz
