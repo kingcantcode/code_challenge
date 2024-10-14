@@ -8,5 +8,5 @@
 // Count and return the number of elements in arr that are smaller than n
 
 // Solution
-const howManySmaller = (arr, n) => arr.filter(x => x.toFixed(2) < n).length;
-console.log(howManySmaller([3.14159, 2.718, 1.618, 4.6692], 3.24)); 
+const howManySmaller = (arr, n) => arr.filter((x) => x.toFixed(2) < n).length;
+console.log(howManySmaller([3.14159, 2.718, 1.618, 4.6692], 3.24));

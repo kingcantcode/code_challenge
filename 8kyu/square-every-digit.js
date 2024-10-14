@@ -8,5 +8,6 @@ Example #2: An input of 765 will/should return 493625 because 72 is 49, 62 is 36
 Note: The function accepts an integer and returns an integer.
 */
 
+// Solution
 const squareEveryDigit = int => Number(int.toString().split("").map((x) => x * x).join(""))
 console.log(squareEveryDigit(765)) // Output: (49-36-25)

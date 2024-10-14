@@ -1,9 +1,10 @@
 // Write a function called showNumbers that takes one parameter, limit. This function should display all the numbers from 0 up to the specified limit. Additionally, next to each number, indicate whether it is even or odd.
 
+// Solution
 const showNumbers = (limit) => {
-    for (let i = 0; i <= limit; i++) {
-        console.log(i, i % 2 === 0 ? "EVEN" : "ODD");
-    }
+  for (let i = 0; i <= limit; i++) {
+    console.log(i, i % 2 === 0 ? "EVEN" : "ODD");
+  }
 };
 
 showNumbers(10);
