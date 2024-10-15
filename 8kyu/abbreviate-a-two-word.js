@@ -10,4 +10,4 @@
 
 // Solution
 const abbrevName = name => name.split(" ").map(name => name[0].toUpperCase()).join(".");
-console.log(abbrevName("Najib Iman")) // Output: S.H"
+console.log(abbrevName("Najib Iman")) // Output: N.I"
