@@ -13,5 +13,9 @@ Output string must be two numbers separated by a single space, and highest numbe
 */
 
 // Solution
-const highAndLow = arr => `${Math.max(...arr.split(" ").map(Number))}` + " " + `${Math.min(...arr.split(" ").map(Number))}`
+const highAndLow = (arr) => {
+    arr = arr.split(" ").map(Number)
+    return `${Math.max(...arr)}` + " " + `${Math.min(...arr)}`
+}
+
 console.log(highAndLow("1 2 3 4 5")) // return "5 1"
