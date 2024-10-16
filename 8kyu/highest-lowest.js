@@ -12,9 +12,6 @@ There will always be at least one number in the input string.
 Output string must be two numbers separated by a single space, and highest number is first.
 */
 
-function highAndLow(arr) {
-    const newArray = arr.split(" ").map(Number)
-    return `${Math.max(...newArray)}` + " " + `${Math.min(...newArray)}`
-}
-
+// Solution
+const highAndLow = arr => `${Math.max(...arr.split(" ").map(Number))}` + " " + `${Math.min(...arr.split(" ").map(Number))}`
 console.log(highAndLow("1 2 3 4 5")) // return "5 1"
