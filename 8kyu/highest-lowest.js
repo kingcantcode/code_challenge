@@ -18,4 +18,4 @@ const highAndLow = (arr) => {
     return `${Math.max(...arr)}` + " " + `${Math.min(...arr)}`
 }
 
-console.log(highAndLow("7 8 6 4 3 5 3 7")) // return "5 1"
+console.log(highAndLow("7 8 6 4 3 5 3 7")) // Output: "8 3"

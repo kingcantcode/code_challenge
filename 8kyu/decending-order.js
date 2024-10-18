@@ -7,8 +7,8 @@
 
 // Input: 123456789 Output: 987654321
 
+// Solution
 const decendingOrder = n => +n.toString().split("").sort((a, b) => b - a).join("")
-
 console.log(decendingOrder("42145")) // 54421 
 
 
