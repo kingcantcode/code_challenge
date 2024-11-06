@@ -17,9 +17,11 @@
 function isTriangle(a,b,c) {
     const sides = [a, b, c].sort((a, b) => a - b) // 1, 5, 10
     const shortestSide = sides.slice(0, 2).reduce((a, b) => a + b) // 1 + 5 = 6
-
-    return (shortestSide > sides[2]) // 6 > 10 = false
-
+    return shortestSide > sides[2] // 6 > 10 = false
 }
 
 console.log(isTriangle(10,5,1)) // Output: false
+
+// Solution 2
+const isTriangle = (a,b,c) => (a + b + c) / 2 > Math.max(a, b, c)
+console.log(isTriangle(5, 11, 15)) //  15.5 > 15 = true
