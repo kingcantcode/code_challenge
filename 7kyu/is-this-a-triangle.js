@@ -13,6 +13,7 @@
 // 0,2,3 -> false
 // 1,2,9 -> false 
 
+// Solution
 function isTriangle(a,b,c) {
     const sides = [a, b, c].sort((a, b) => a - b) // 1, 5, 10
     const shortestSide = sides.slice(0, 2).reduce((a, b) => a + b) // 1 + 5 = 6
@@ -21,4 +22,4 @@ function isTriangle(a,b,c) {
 
 }
 
-console.log(isTriangle(10,5,1))
+console.log(isTriangle(10,5,1)) // Output: false
